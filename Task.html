@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация в %website_name%</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <style>
+        #main {
+          display: none;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+        #okno {
+          width: 300px;
+          height: 50px;
+          text-align: center;
+          padding: 10px;
+          border: 3px solid #000000;
+          color: #000000;
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          margin: auto;
+        }
+        #main:target {display: block;}
+    </style>
+  </head>
+  <body>
+  <section class="section">
+
+    <div class="field">
+        <label class="label">Регистрация</label>
+    </div>
+
+    <div class="field">
+        <label class="lable"><strong>Вы регистрируетесь как</strong></label>
+        <div class="control">
+            <label class="radio">
+              <input type="radio" name="question">
+              Покупатель
+            </label>
+            <br>
+            <label class="radio">
+              <input type="radio" name="question">
+              Поставщик
+            </label>
+          </div>
+    </div>
+
+    <div class="field">
+        <div class="control">
+            <label class="label">Эл.почта</label>
+            <input class="input" style="width: 400px" type="text">
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="field">
+        <label class="lable"><b>Название организации</b></label>
+        <div class="control">
+            <label class="label">ИП или Юр.лицо</label>
+            <input class="input" style="width: 400px" type="text">
+            <label class="label">ИНН</label>
+            <input class="input" style="width: 400px" type="text">
+        </div>
+    </div>
+
+    <div class="field">
+        <label class="label">Фактический адрес</label>
+    </div>
+
+    <div class="field is-horizontal">
+        <div class="field-body">
+          <div class="field">
+            <p class="control">
+              <label class="label">Улица</label>
+              <input class="input" type="text">
+            </p>
+          </div>
+          <div class="field">
+            <p class="control">
+              <label class="label">Дом/стр.</label>
+              <input class="input" type="text">
+            </p>
+          </div>
+          <div class="field">
+            <p class="control">
+              <label class="label">Офис</label>
+              <input class="input" type="text">
+            </p>
+          </div>
+        </div>
+    </div>
+      
+    <div class="field">
+        <div class="label">
+          <label class="label">Телефон</label>
+        </div>
+            <div class="field has-addons">
+                <p class="control">
+                  <a class="button is-static">
+                    +7
+                  </a>
+                </p>
+                <p class="control is-expanded">
+                  <input class="input" style="width: 400px" type="tel">
+                </p>
+            </div>
+    </div>
+
+    <div class="field">
+        <div class="control">
+            <label class="label">Сайт вашей компании</label>
+            <input class="input" style="width: 400px" type="text">
+        </div>
+    </div>
+
+    <br>
+
+    <div class="field">
+        <label class="label">Виды деятельности</label>
+        <div class="control">
+          <label class="checkbox">
+            <input type="checkbox">
+            Магазин 
+          </label>
+          <br>
+          <label class="checkbox">
+            <input type="checkbox">
+            Региональная сеть магазинов 
+          </label>
+          <br>
+          <label class="checkbox">
+            <input type="checkbox">
+            Федеральная сеть магазинов 
+          </label>
+          <br>
+          <label class="checkbox">
+            <input type="checkbox">
+            Интернет-магазин 
+          </label>
+          <br>
+          <label class="checkbox">
+            <input type="checkbox">
+            Автосервис 
+          </label>
+        </div>
+    </div>
+
+    <div class="field">
+        <div class="control">
+            <label class="label">Прочее</label>
+            <input class="input" style="width: 400px" type="text">
+        </div>
+    </div>
+
+    <br>
+
+    <a href="#" id="main">
+        <div id="okno">
+          Вы успешно зарегестрировались!
+        </div>
+    </a>
+       
+    <a href="#main" class="button is-primary">Отправить заявку</a>
+
+  </section>
+  </body>
+</html>
